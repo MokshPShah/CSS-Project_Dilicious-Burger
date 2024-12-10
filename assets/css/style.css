@@ -128,7 +128,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 40px;
+    padding: 0px 40px;
     font-size: 14px;
     font-weight: 600;
 }
@@ -139,6 +139,7 @@ ul {
 
 li {
     position: relative;
+    padding: 20px 0;
 }
 
 a {
@@ -152,6 +153,7 @@ a {
     background-color: var(--white);
     min-width: 160px;
     z-index: 1;
+    top: 90px;
     border-top: 4px solid var(--primary-color);
 }
 
