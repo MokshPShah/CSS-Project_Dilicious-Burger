@@ -3,6 +3,8 @@
     box-sizing: border-box;
 }
 
+/* Preclasses Section */
+
 :root {
     --primary-color: #ad0716;
     --primary-color-rgb: 173, 7, 22;
@@ -30,17 +32,15 @@ html {
 body {
     color: var(--black);
     font-family: var(--text-primary);
-    padding: var(--gw);
+    background-color: var(--bg-color);
 }
 
-.container {
+.main-container {
     max-width: 1320px;
     margin: calc(var(--gw) - 30px) auto;
     font-weight: var(--fw);
     font-size: var(--fs);
     line-height: var(--lh);
-    overflow-x: hidden;
-    background-color: var(--bg-color);
 }
 
 img {
@@ -111,24 +111,29 @@ h4 {
     width: 100%;
 }
 
+/* Home Section */
+
 .content1 {
     background-image: url('../images/slider/slider.jpg');
     background-repeat: no-repeat;
-    background-size: 140%;
+    background-size: 130%;
     background-position: center;
     height: 880px;
 }
 
+/* Header Section */
+
 header {
     border-bottom: 1px solid var(--white);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .navbar {
     background-color: transparent;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 40px;
+    padding: 0px 40px 0 0;
     font-size: 14px;
     font-weight: 600;
 }
@@ -180,22 +185,23 @@ a {
 
 .logo-img {
     width: 13%;
+    margin-right: 45px;
 }
 
 .hm-sec-3 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 26%;
 }
 
 .cont {
     display: flex;
     flex-direction: row;
-    margin-right: -205px;
 }
 
 .delivery-icon {
-    width: 10.5%;
+    width: 20.5%;
     margin-right: 20px;
 }
 
@@ -233,7 +239,7 @@ a {
 .angle-up {
     position: fixed;
     bottom: 30px;
-    right: 115px;
+    right: 35px;
     color: var(--white);
     padding: 0px 5px;
     font-size: 25px;
@@ -242,17 +248,18 @@ a {
     z-index: 999;
 }
 
+/* Banner section */
+
 .hm-banner {
     position: relative;
-    top: 140px;
-    left: 100px;
+    padding: 140px 100px;
     line-height: 1.1;
 }
 
 .angle-left {
     position: absolute;
-    top: 225px;
-    left: -70px;
+    top: 325px;
+    left: 30px;
     background-color: var(--white);
     padding: 15px 20px;
     border-radius: 50%;
@@ -328,8 +335,8 @@ a {
 
 .angle-right {
     position: absolute;
-    top: 225px;
-    right: 130px;
+    top: 325px;
+    right: 30px;
     background-color: var(--white);
     padding: 15px 20px;
     border-radius: 50%;
@@ -337,11 +344,20 @@ a {
     cursor: pointer;
 }
 
+/* Card Section */
+
 .card {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 70px 50px;
+}
+
+.card-1, .card-2, .card-3
+{
+    width: 390px;
+    height: 290px;
+    border-radius: 25px;
 }
 
 .card-1,
@@ -356,7 +372,7 @@ a {
 .card-bg-1,
 .card-bg-2,
 .card-bg-3 {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -365,6 +381,7 @@ a {
     background-position: center;
     border-radius: 15px;
     padding: 50px 40px;
+    z-index: -2;
 }
 
 .card-bg-1 {
@@ -392,7 +409,7 @@ a {
     border-radius: 15px;
     transform: scale(0.9);
     transition: all 1.2s;
-    z-index: 1;
+    z-index: -1;
 }
 
 .card-overlay-1 {
@@ -407,11 +424,10 @@ a {
     background-image: url('../images/card-section-1/burger-banner-03.png');
 }
 
-.card-overlay-1:hover,
-.card-overlay-2:hover,
-.card-overlay-3:hover {
+.card-1:hover .card-overlay-1,
+.card-2:hover .card-overlay-2,
+.card-3:hover .card-overlay-3 {
     transform: scale(0);
-    opacity: 0;
 }
 
 .card-text-sm-1,
@@ -419,6 +435,8 @@ a {
 .card-text-sm-3 {
     color: var(--secondary-color);
     font-size: 28px;
+    font-family: var(--text-secondary);
+    font-weight: 600;
 }
 
 .card-text-sm-2{
@@ -445,14 +463,13 @@ a {
     background-color: transparent;
     color: var(--white);
     font-weight: 600;
-    padding: 10px 15px;
+    padding: 13px 30px;
     border: 1px solid var(--white);
     border-radius: 35px;
     margin-top: 10px;
     text-align: center;
     cursor: pointer;
-    position: relative;
-    z-index: 1;
+    font-size: 15px;
 }
 
 .card-btn-1:hover,
@@ -479,4 +496,31 @@ a {
     width: 50%;
     bottom: 15px;
     right: -17px;
+    z-index: 2;
+}
+
+/* Burger Section */
+
+.container-2{
+    padding: 20px 40px;
+}
+
+.dot-img-con-2{
+    width: 45px;
+    margin-left: 55px;
+}
+
+.circle{
+    background-image: url(../images/burger-sec-1/circle-ellipse-4.png);
+    width: 652px;
+    height: 650px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.burger-img{
+    background-color: var(--secondary-color);
+    width: 625px;
+    height: 600px;
+    border-radius: 50%;
 }
