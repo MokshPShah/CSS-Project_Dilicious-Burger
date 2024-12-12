@@ -211,9 +211,12 @@ nav {
     font-weight: 600;
 }
 
+nav>ul>li{
+    padding: 30px 0;
+}
+
 .dropdown {
     position: relative;
-    padding: 30px 0;
 }
 
 .dropdown>a {
@@ -225,10 +228,13 @@ nav {
     position: absolute;
     background-color: var(--white);
     border-top: 4px solid var(--primary-color);
-    min-width: 145px;
+    width: 145px;
     z-index: 1;
-    display: none;
+    visibility: hidden;
+    opacity: 0;
     top: 107px;
+    left: 3px;
+    transition: all 0.3s linear;
 }
 
 .dropdown-content li {
@@ -239,10 +245,12 @@ nav {
     padding: 12px 10px;
     display: block;
     color: var(--black);
+    transition: all .5s linear;
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+    visibility: visible;
+    opacity: 1;
 }
 
 .logo {
