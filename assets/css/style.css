@@ -139,37 +139,30 @@ h4 {
 }
 
 .justify-start {
-    display: flex;
     justify-content: flex-start;
 }
 
 .justify-center {
-    display: flex;
     justify-content: center;
 }
 
 .justify-between {
-    display: flex;
     justify-content: space-between;
 }
 
 .justify-end {
-    display: flex;
     justify-content: flex-end;
 }
 
 .items-start {
-    display: flex;
     align-items: flex-start;
 }
 
 .items-center {
-    display: flex;
     align-items: center;
 }
 
 .items-end {
-    display: flex;
     align-items: flex-end;
 }
 
@@ -183,6 +176,10 @@ h4 {
 
 .d-flex {
     display: flex;
+}
+
+.justify-items-center{
+    justify-items: center;
 }
 
 .btn {
@@ -204,6 +201,9 @@ h4 {
 header {
     padding: 0 100px;
     border-bottom: 1px solid var(--white);
+    position: absolute;
+    z-index: 99;
+    top: 0%;
 }
 
 nav {
@@ -220,7 +220,7 @@ nav>ul>li{
 }
 
 .dropdown>a {
-    padding: 14px 15px;
+    padding: 14px 0px;
     display: block;
 }
 
@@ -228,24 +228,21 @@ nav>ul>li{
     position: absolute;
     background-color: var(--white);
     border-top: 4px solid var(--primary-color);
-    width: 145px;
+    width: 160px;
+    border-radius: 0 0 4px 4px;
     z-index: 1;
     visibility: hidden;
     opacity: 0;
-    top: 107px;
+    top: 110px;
     left: 3px;
-    transition: all 0.3s linear;
-}
-
-.dropdown-content li {
-    padding: 0;
+    transition: all 0.2s linear;
 }
 
 .dropdown-content>li>a {
-    padding: 12px 10px;
+    padding: 10px 10px 10px 15px;
     display: block;
     color: var(--black);
-    transition: all .5s linear;
+    transition: all .2s linear;
 }
 
 .dropdown:hover .dropdown-content {
@@ -254,7 +251,8 @@ nav>ul>li{
 }
 
 .logo {
-    width: 60%;
+    width: 50%;
+    justify-items: center;
 }
 
 .dropdown-content a:hover {
@@ -307,7 +305,11 @@ nav>ul>li{
 }
 
 .banner {
-    padding: 170px 120px;
+    position: relative;
+    background-image: url('../images/slider/slider.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 280px 120px;
 }
 
 .banner-text-sm {
@@ -315,8 +317,8 @@ nav>ul>li{
     font-size: 55px;
     text-shadow: 0 7px 5px var(--black);
     display: flex;
+    animation: left 0.5s linear;
 }
-
 .dot-img-banner {
     width: 45px;
     margin: 20px 0 0 20px;
@@ -329,6 +331,7 @@ nav>ul>li{
     line-height: 65px;
     letter-spacing: 8px;
     font-weight: 700;
+    animation: left 1s linear 0.2s;
 }
 
 .banner-text-lg-1 {
@@ -338,11 +341,13 @@ nav>ul>li{
     text-transform: uppercase;
     line-height: 130px;
     font-weight: 700;
+    animation: left 1s linear 0.2s;
 }
 
 .btn-menu-banner {
     position: relative;
     top: 50px;
+    animation: left 2s .5s linear;
 }
 
 .btn-banner {
@@ -357,8 +362,19 @@ nav>ul>li{
     color: var(--black);
     border-radius: 50%;
     margin-right: 20px;
+    animation: left 2s .5s linear;
 }
 
 .btn-menu-banner span{
     color: var(--white);
+    animation: left 2s .5s linear;
+}
+
+@keyframes left {
+    from{
+        transform: translateX(-200px);
+    }
+    to{
+        transform: translateX(0);
+    }
 }
