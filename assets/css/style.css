@@ -39,7 +39,7 @@ body {
 
 }
 
-.main-container {
+.container {
     max-width: 1320px;
     margin-left: auto;
     margin-right: auto;
@@ -148,6 +148,10 @@ h4 {
 
 .justify-between {
     justify-content: space-between;
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
 }
 
 .justify-end {
@@ -287,6 +291,11 @@ nav>ul>li{
     text-align: center;
 }
 
+.cart{
+    position: relative;
+    padding: 15px;
+}
+
 .search:hover,
 .cart:hover {
     background-color: var(--white);
@@ -303,6 +312,19 @@ nav>ul>li{
     opacity: 0.25;
     margin-left: 15px;
 }
+
+.cart-number{
+    position: absolute;
+    top: 21px;
+    background-color: var(--secondary-color);
+    color: var(--black);
+    border-radius: 50%;
+    padding: 0 5px;
+    right: 152px;
+    font-size: 12px;
+}
+
+/* Banner Section */
 
 .banner {
     position: relative;
@@ -377,4 +399,274 @@ nav>ul>li{
     to{
         transform: translateX(0);
     }
+}
+
+.previous{
+    position: absolute;
+    top: 50%;
+    left: 4%;
+    background-color: var(--white);
+    padding: 10px 16px;
+    border-radius: 50%;
+}
+
+.next{
+    position: absolute;
+    top: 50%;
+    right: 4%;
+    background-color: var(--white);
+    padding: 10px 16px;
+    border-radius: 50%;
+}
+
+/* Card Section */
+
+.card{
+    margin: 60px;
+}
+
+.card-1, .card-2, .card-3{
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    height: 300px;
+    overflow: hidden;
+}
+
+.card-1{
+    background-image: url('/assets/images/card-section-1/burger-box-bg-1.jpeg');
+}
+
+.card-overlay-img-1{
+    position: absolute;
+    content: url('/assets/images/card-section-1/burger-banner-01.png');
+    top: 0;
+    left: 0;
+    transform: scale(1);
+    width: 100%;
+    transition: all 1s ease;
+}
+
+.card-1:hover .card-overlay-img-1{
+    transform: scale(0);
+}
+
+.card-1::after{
+    position: absolute;
+    content: url('/assets/images/card-section-1/burger1.png');
+    bottom: 12px;
+    right: -20px;
+}
+
+.card-2{
+    background-image: url('/assets/images/card-section-1/burger-box-bg-2.jpeg');
+}
+
+.card-overlay-img-2{
+    position: absolute;
+    content: url('/assets/images/card-section-1/burger-banner-02.png');
+    top: 0;
+    left: 0;
+    transform: scale(1);
+    width: 100%;
+    transition: all 1s ease;
+}
+
+.card-2:hover .card-overlay-img-2{
+    transform: scale(0);
+}
+
+.card-2::after{
+    position: absolute;
+    content: url('/assets/images/card-section-1/burger2.png');
+    bottom: 12px;
+    right: -20px;
+}
+
+.card-3{
+    background-image: url('/assets/images/card-section-1/burger-box-bg-3.jpeg');
+}
+
+.card-overlay-img-3{
+    position: absolute;
+    content: url('/assets/images/card-section-1/burger-banner-03.png');
+    top: 0;
+    left: 0;
+    transform: scale(1);
+    width: 100%;
+    transition: all 1s ease;
+}
+
+.card-3:hover .card-overlay-img-3{
+    transform: scale(0);
+}
+
+.card-3::after{
+    position: absolute;
+    content: url('/assets/images/card-section-1/burger1.png');
+    bottom: 12px;
+    right: -20px;
+}
+
+
+.card-info-1, .card-info-2, .card-info-3{
+    padding-top: 40px;
+    padding-left: 20px;
+    position: absolute;
+    z-index: 99;
+    color: var(--white);
+}
+
+.card-info-1 h4, .card-info-2 h4,.card-info-3 h4{
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.card-info-1 h4{
+    color: var(--secondary-color);
+}
+
+.card-info-2 h4{
+    color: var(--black);
+}
+
+.card-info-3 h4{
+    color: var(--primary-color);
+}
+
+.card-info-1 h2, .card-info-2 h2, .card-info-3 h2{
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 30px;
+}
+
+.card-info-1 .btn, .card-info-2 .btn, .card-info-3 .btn{
+    border: 1px solid var(--white);
+    padding: 10px 20px;
+    transition: all 0.5s;
+}
+
+.card-info-1 .btn:hover{
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.card-info-2 .btn:hover{
+    background-color: var(--white);
+    border-color: var(--white);
+    color: var(--black);
+}
+
+.card-info-3 .btn:hover{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Discover Section */
+
+.discover::before{
+    position: absolute;
+    content: url('assets/images/burger-sec-1/pattern-shap-02.png');
+    top: 0;
+    left: 0;
+}
+
+.discover-dot-img{
+    width: 12%;
+}
+
+.dot-img-3{
+    width: 75%;
+    margin-left: 12px;
+}
+
+.discover-bg-circle{ 
+    background-image: url(/assets/images/burger-sec-1/circle-ellipse-4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 650px;
+}
+
+.discover-bg-circle-2{
+    position: relative;
+    background-image: url(/assets/images/burger-sec-1/circle-ellipse.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 570px;
+    top: 40px;
+    left: 4px;
+}
+
+.discover-bg-circle-2 img{
+    width: 85%;
+    position: absolute;
+    top: 3%;
+    left: 48px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    padding: 95px 60px 60px 10px;
+}
+
+.discover-text{
+    padding: 125px 70px;
+}
+
+.discover-text h4{
+    color: var(--secondary-color);
+    font-size: 25px;
+}
+
+.discover-text h2{
+    font-size: 55px;
+}
+
+.discover-para{
+    margin-top: 20px;
+    color: #757171;
+}
+
+.para-grp{
+    margin-top: 20px;
+}
+
+.para-grp p{
+    padding-top: 15px;
+
+}
+
+.para-grp p i{
+    color: var(--primary-color);
+    font-size: 12px;
+    margin: 0 6px 0 12px;
+}
+
+.discover-circle{
+    position: relative;
+}
+
+.burger-circle{
+    position: absolute;
+    top: 60px;
+    left: 115px;
+    border-radius: 50%;
+    border: 16px solid var(--secondary-color);
+    padding: 12px;
+}
+
+.burger-circle img{
+    width: 50px;
+    height: 50px;
+}
+
+.line{
+    border-bottom: 1px solid var(--white);
+    opacity: 0.2;
+    border-color: #757171;
+    padding-top: 50px;
 }
