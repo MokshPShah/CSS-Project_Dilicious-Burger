@@ -244,7 +244,7 @@ nav>ul>li {
     position: absolute;
     background-color: var(--white);
     border-top: 4px solid var(--primary-color);
-    width: 160px;
+    min-width: 230px;
     border-radius: 0 0 4px 4px;
     z-index: 1;
     visibility: hidden;
@@ -252,25 +252,35 @@ nav>ul>li {
     top: 110px;
     left: 3px;
     transition: all 0.2s linear;
+    padding: 10px 0;
+}
+
+.dropdown-content>li {
+    font-weight: 400;
+    padding: 10px 25px;
 }
 
 .dropdown-content>li>a {
-    padding: 10px 10px 10px 15px;
-    display: block;
-    color: var(--black);
-    transition: all .2s linear;
+    display: inline-block;
     position: relative;
-    &::after {
+    color: var(--black);
+    font-family: var(--text-primary);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: 0;
+    font-style: normal;
+    transition: all .2s linear;
+    &::before {
         content: '';
         position: absolute;
-        bottom: 0px;
-        left: 0;
+        bottom: -3px;
         width: 0;
-        height: 1px;
+        height: 1.5px;
         background-color: var(--primary-color);
-        transition: all 0.8s ease;
+        transition: all 0.5s ease;
     }
-    &:hover:after{
+    &:hover::before {
         width: 100%;
     }
 }
@@ -1012,9 +1022,11 @@ nav>ul>li {
     font-weight: 600;
     transition: all 0.5s ease;
     position: relative;
+
     &:hover {
         color: var(--primary-color);
     }
+
     &::after {
         content: '';
         position: absolute;
@@ -1025,7 +1037,8 @@ nav>ul>li {
         background-color: var(--primary-color);
         transition: all 0.8s ease;
     }
-    &:hover:after{
+
+    &:hover:after {
         width: 100%;
     }
 }
@@ -1671,4 +1684,15 @@ footer h3 {
     & a:hover {
         color: var(--secondary-color);
     }
+}
+
+.top{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    background-color: rgba(var(--black-rgb), 0.2);
+    border-radius: 50px;
+    padding: 10px 15px;
+    z-index: 99;
+    border: 1px solid var(--primary-color);
 }
