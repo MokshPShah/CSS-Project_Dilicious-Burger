@@ -2,9 +2,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 /* Preclasses Section */
-
 :root {
     --primary-color: #ad0716;
     --primary-color-rgb: 173, 7, 22;
@@ -24,11 +22,9 @@
     --lh: 1.5;
     --gw: 15px;
 }
-
 html {
     scroll-behavior: smooth;
 }
-
 body {
     color: var(--black);
     font-family: var(--text-primary);
@@ -38,7 +34,6 @@ body {
     line-height: var(--lh);
 
 }
-
 .container {
     max-width: 1320px;
     margin-left: auto;
@@ -46,89 +41,70 @@ body {
     padding-left: var(--gw);
     padding-right: var(--gw);
 }
-
 .row {
     display: flex;
     flex-wrap: wrap;
     margin-left: calc(-1 * var(--gw));
     margin-right: calc(-1 * var(--gw));
 }
-
 img {
     display: block;
     width: 100%;
 }
-
 ul,
 ol {
     list-style: none;
     padding: 0;
 }
-
 a {
     color: var(--white);
     text-decoration: none;
 }
-
 h4 {
     font-family: var(--text-secondary);
     color: var(--secondary-color);
     font-size: 24px;
 }
-
 h2 {
     font-size: 50px;
     line-height: 60px;
 }
-
 .col-1 {
     width: 8.3333%;
 }
-
 .col-2 {
     width: 16.6666%;
 }
-
 .col-3 {
     width: 25%;
 }
-
 .col-4 {
     width: 33.3333%;
 }
-
 .col-5 {
     width: 41.6666%;
 }
-
 .col-6 {
     width: 50%;
 }
-
 .col-7 {
     width: 58.3333%;
 }
-
 .col-8 {
     width: 66.6666%;
 }
-
 .col-9 {
     width: 75%;
 }
-
 .col-10 {
     width: 83.3333%;
 }
-
 .col-11 {
     width: 91.6666%;
 }
-
 .col-10 {
     width: 100%;
 }
-
 .col-1,
 .col-2,
 .col-3,
@@ -144,75 +120,58 @@ h2 {
     padding-left: var(--gw);
     padding-right: var(--gw);
 }
-
 .justify-start {
     justify-content: flex-start;
 }
-
 .justify-center {
     justify-content: center;
 }
-
 .justify-between {
     justify-content: space-between;
 }
-
 .justify-evenly {
     justify-content: space-evenly;
 }
-
 .justify-end {
     justify-content: flex-end;
 }
-
 .items-start {
     align-items: flex-start;
 }
-
 .items-center {
     align-items: center;
 }
-
 .items-end {
     align-items: flex-end;
 }
-
 .text-center {
     text-align: center;
 }
-
 .text-right {
     text-align: right;
 }
-
 .d-flex {
     display: flex;
 }
-
 .justify-items-center {
     justify-items: center;
 }
-
 .btn {
     text-transform: uppercase;
     padding: 15px 40px;
     border-radius: 27px;
     font-weight: 600;
 }
-
 .ml-50 {
     margin-left: -50px;
 }
-
 .py-120 {
     padding-top: 120px;
     padding-bottom: 120px;
 }
-
 .text-primary {
     color: var(--primary-color);
 }
-
 /* Header Section */
 header {
     padding: 0 100px;
@@ -221,25 +180,20 @@ header {
     z-index: 99;
     top: 0%;
 }
-
 nav {
     font-size: 14px;
     font-weight: 600;
 }
-
 nav>ul>li {
     padding: 30px 0;
 }
-
 .dropdown {
     position: relative;
 }
-
 .dropdown>a {
     padding: 14px 0px;
     display: block;
 }
-
 .dropdown-content {
     position: absolute;
     background-color: var(--white);
@@ -254,12 +208,10 @@ nav>ul>li {
     transition: all 0.2s linear;
     padding: 10px 0;
 }
-
 .dropdown-content>li {
     font-weight: 400;
     padding: 10px 25px;
 }
-
 .dropdown-content>li>a {
     display: inline-block;
     position: relative;
@@ -284,26 +236,21 @@ nav>ul>li {
         width: 100%;
     }
 }
-
 .dropdown:hover .dropdown-content {
     visibility: visible;
     opacity: 1;
 }
-
 .logo {
     width: 50%;
     justify-items: center;
 }
-
 .dropdown-content a:hover {
     color: var(--primary-color);
 }
-
 .delivery-img {
     width: 10%;
     margin-right: 10px;
 }
-
 .contact-text {
     display: flex;
     flex-direction: column;
@@ -311,11 +258,9 @@ nav>ul>li {
     justify-content: center;
     font-size: var(--fs);
 }
-
 .contact-text-2 {
     font-size: 18px;
 }
-
 .search,
 .cart {
     color: var(--white);
@@ -327,29 +272,24 @@ nav>ul>li {
     text-align: center;
     transition: all 0.5s;
 }
-
 .cart {
     position: relative;
     padding: 15px;
 }
-
 .search:hover,
 .cart:hover {
     background-color: var(--white);
 }
-
 .search:hover,
 .cart:hover {
     color: var(--black);
 }
-
 .pipe {
     border: 1px solid var(--white);
     height: 25px;
     opacity: 0.25;
     margin-left: 15px;
 }
-
 .cart-number {
     position: absolute;
     top: 21px;
@@ -360,9 +300,7 @@ nav>ul>li {
     right: 152px;
     font-size: 12px;
 }
-
 /* Banner Section */
-
 .banner {
     position: relative;
     background-image: url('../images/slider/slider.jpg');
@@ -371,7 +309,6 @@ nav>ul>li {
     background-size: cover;
     padding: 280px 120px;
 }
-
 .banner-text-sm {
     color: var(--secondary-color);
     font-size: 55px;
@@ -379,12 +316,10 @@ nav>ul>li {
     display: flex;
     animation: left 0.5s linear;
 }
-
 .dot-img-banner {
     width: 45px;
     margin: 20px 0 0 20px;
 }
-
 .banner-text-lg {
     color: var(--white);
     font-size: 77px;
@@ -394,7 +329,6 @@ nav>ul>li {
     font-weight: 700;
     animation: left 1s linear 0.2s;
 }
-
 .banner-text-lg-1 {
     color: transparent;
     -webkit-text-stroke: 2px var(--white);
@@ -404,25 +338,21 @@ nav>ul>li {
     font-weight: 700;
     animation: left 1s linear 0.2s;
 }
-
 .btn-menu-banner {
     position: relative;
     top: 50px;
     animation: left 2s .5s linear;
 }
-
 .btn-banner {
     background-color: var(--secondary-color);
     color: var(--white);
     margin-right: 20px;
     transition: all 0.5s;
 }
-
 .btn-banner:hover {
     background-color: var(--white);
     color: var(--black);
 }
-
 .play-btn {
     background-color: var(--white);
     padding: 20px 22px;
@@ -431,22 +361,18 @@ nav>ul>li {
     margin-right: 20px;
     animation: left 2s .5s linear;
 }
-
 .btn-menu-banner span {
     color: var(--white);
     animation: left 2s .5s linear;
 }
-
 @keyframes left {
     from {
         transform: translateX(-200px);
     }
-
     to {
         transform: translateX(0);
     }
 }
-
 .previous {
     position: absolute;
     top: 50%;
@@ -455,7 +381,6 @@ nav>ul>li {
     padding: 10px 16px;
     border-radius: 50%;
 }
-
 .next {
     position: absolute;
     top: 50%;
@@ -464,13 +389,10 @@ nav>ul>li {
     padding: 10px 16px;
     border-radius: 50%;
 }
-
 /* Card Section */
-
 .card {
     margin: 60px;
 }
-
 .card-1,
 .card-2,
 .card-3 {
@@ -484,11 +406,9 @@ nav>ul>li {
     height: 300px;
     overflow: hidden;
 }
-
 .card-1 {
     background-image: url('../images/card-section-1/burger-box-bg-1.jpeg');
 }
-
 .card-overlay-img-1 {
     position: absolute;
     content: url('../images/card-section-1/burger-banner-01.png');
@@ -498,22 +418,18 @@ nav>ul>li {
     width: 100%;
     transition: all 1s ease;
 }
-
 .card-1:hover .card-overlay-img-1 {
     transform: scale(0);
 }
-
 .card-1::after {
     position: absolute;
     content: url('../images/card-section-1/burger1.png');
     bottom: 12px;
     right: -20px;
 }
-
 .card-2 {
     background-image: url('../images/card-section-1/burger-box-bg-2.jpeg');
 }
-
 .card-overlay-img-2 {
     position: absolute;
     content: url('../images/card-section-1/burger-banner-02.png');
@@ -523,22 +439,18 @@ nav>ul>li {
     width: 100%;
     transition: all 1s ease;
 }
-
 .card-2:hover .card-overlay-img-2 {
     transform: scale(0);
 }
-
 .card-2::after {
     position: absolute;
     content: url('../images/card-section-1/burger2.png');
     bottom: 12px;
     right: -20px;
 }
-
 .card-3 {
     background-image: url('../images/card-section-1/burger-box-bg-3.jpeg');
 }
-
 .card-overlay-img-3 {
     position: absolute;
     content: url('../images/card-section-1/burger-banner-03.png');
@@ -548,18 +460,15 @@ nav>ul>li {
     width: 100%;
     transition: all 1s ease;
 }
-
 .card-3:hover .card-overlay-img-3 {
     transform: scale(0);
 }
-
 .card-3::after {
     position: absolute;
     content: url('../images/card-section-1/burger1.png');
     bottom: 12px;
     right: -20px;
 }
-
 .card-info-1,
 .card-info-2,
 .card-info-3 {
@@ -569,29 +478,24 @@ nav>ul>li {
     z-index: 99;
     color: var(--white);
 }
-
 .card-info-1 h4,
 .card-info-2 h4,
 .card-info-3 h4 {
     font-size: 25px;
     font-weight: normal;
 }
-
 .card-info-2 h4 {
     color: var(--black);
 }
-
 .card-info-3 h4 {
     color: var(--primary-color);
 }
-
 .card-info-1 h2,
 .card-info-2 h2,
 .card-info-3 h2 {
     line-height: 50px;
     margin-bottom: 30px;
 }
-
 .card-info-1 .btn,
 .card-info-2 .btn,
 .card-info-3 .btn {
@@ -599,41 +503,33 @@ nav>ul>li {
     padding: 10px 20px;
     transition: all 0.5s;
 }
-
 .card-info-1 .btn:hover {
     background-color: var(--secondary-color);
     border-color: var(--secondary-color);
 }
-
 .card-info-2 .btn:hover {
     background-color: var(--white);
     border-color: var(--white);
     color: var(--black);
 }
-
 .card-info-3 .btn:hover {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
 }
-
 /* Discover Section */
-
 .discover::before {
     position: absolute;
     content: url('assets/images/burger-sec-1/pattern-shap-02.png');
     top: 0;
     left: 0;
 }
-
 .discover-dot-img {
     width: 12%;
 }
-
 .dot-img-3 {
     width: 75%;
     margin-left: 12px;
 }
-
 .discover-bg-circle {
     background-image: url(../images/burger-sec-1/circle-ellipse-4.png);
     background-repeat: no-repeat;
@@ -641,7 +537,6 @@ nav>ul>li {
     background-size: contain;
     height: 650px;
 }
-
 .discover-bg-circle-2 {
     position: relative;
     background-image: url(../images/burger-sec-1/circle-ellipse.png);
@@ -652,7 +547,6 @@ nav>ul>li {
     top: 40px;
     left: 4px;
 }
-
 .discover-bg-circle-2 img {
     width: 85%;
     position: absolute;
@@ -662,41 +556,32 @@ nav>ul>li {
     border-radius: 50%;
     padding: 95px 60px 60px 10px;
 }
-
 .discover-text {
     padding: 125px 70px;
 }
-
 .discover-text h2 {
     font-size: 55px;
 }
-
 .discover-para {
     margin-top: 20px;
     color: #757171;
 }
-
 .para-grp {
     margin-top: 20px;
 }
-
 .para-grp p {
     padding-top: 15px;
-
 }
-
 .para-grp p i {
     color: var(--primary-color);
     font-size: 12px;
     margin: 0 6px 0 12px;
 }
-
 .discover-circle {
     position: relative;
     top: 50px;
     left: 115px;
 }
-
 .burger-circle {
     position: absolute;
     border-radius: 50%;
@@ -707,7 +592,6 @@ nav>ul>li {
     margin-bottom: 20px;
     background-color: var(--secondary-color);
 }
-
 .burger-circle svg {
     fill: var(--primary-color);
     transform-origin: 50% 50% 0;
@@ -719,17 +603,14 @@ nav>ul>li {
     width: 135px;
     animation: svg-rotate 15s infinite linear;
 }
-
 @keyframes svg-rotate {
     0% {
         transform: rotate(0);
     }
-
     100% {
         transform: rotate(360deg);
     }
 }
-
 .discover-circle img {
     position: absolute;
     width: 100px;
@@ -741,14 +622,12 @@ nav>ul>li {
     padding: 22px;
     border: 2px solid var(--primary-color);
 }
-
 .line {
     border-bottom: 1px solid var(--white);
     opacity: 0.2;
     border-color: #757171;
     padding-top: 50px;
 }
-
 .discover-btn .btn {
     text-transform: uppercase;
     background-color: var(--primary-color);
@@ -756,48 +635,38 @@ nav>ul>li {
     padding: 15px 40px;
     transition: all 0.5s;
 }
-
 .discover-btn .btn:hover {
     background-color: #383737;
 }
-
 .discover-contact {
     margin-top: -7px;
     transition: all 0.5s;
     cursor: pointer;
 }
-
 .discover-contact:hover {
     transform: translateY(-15px);
 }
-
 .phone-icon {
     align-self: center;
     font-size: 25px;
     color: var(--primary-color);
 }
-
 .para-grp-2 {
     margin-left: 20px;
 }
-
 .discover-base {
     margin-top: 50px;
 }
-
 .discover-para-1 {
     font-size: 13.5px;
     color: #757171;
     font-weight: 600;
 }
-
 .discover-para-2 {
     color: var(--primary-color);
     font-weight: 600;
 }
-
 /* Pizza Section */
-
 .pizza,
 .apps {
     background-image: url('../images/pizza-section/bg-pattern.png');
@@ -806,7 +675,6 @@ nav>ul>li {
     overflow: hidden;
     padding-bottom: 100px;
 }
-
 .pizza::before,
 .apps::before {
     content: '';
@@ -818,51 +686,42 @@ nav>ul>li {
     height: -webkit-fill-available;
     z-index: -1;
 }
-
 .pizza-top-img {
     position: relative;
     top: 25px;
 }
-
 .pizza-top-img::before {
     content: url('../images/pizza-section/vector-img-01.png');
     position: absolute;
     left: 30%;
 }
-
 .pizza-top-img::after {
     content: url(../images/pizza-section/vector-img-07.png);
     position: absolute;
     right: 0;
     top: 35px;
 }
-
 .pizza-vector-1 {
     left: 30%;
 }
-
 .pizza-vector-2 {
     position: relative;
     right: 30%;
 }
-
 .pizza-head {
     padding-top: 100px;
     font-size: 25px;
     color: var(--secondary-color);
 }
-
 .pizza-heading {
     font-size: 50px;
     color: var(--white);
 }
-
 .pizza-cards {
     margin-top: 40px;
     margin-left: 120px;
     margin-bottom: 50px;
 }
-
 .pizza-card-content {
     background-color: var(--white);
     border-radius: 20px;
@@ -870,38 +729,31 @@ nav>ul>li {
     padding: 45px 0 55px 0;
     cursor: pointer;
 }
-
 .pizza-card-content img {
     width: 250px;
     margin-left: 40px;
 }
-
 .pizza-card-content h2 {
     font-size: 24px;
     margin-bottom: 10px;
     transition: all 0.5s ease;
 }
-
 .pizza-card-content:hover h2 {
     color: var(--primary-color);
 }
-
 .price {
     margin-bottom: 30px;
     color: #757171;
 }
-
 .pizza-card-content .btn {
     background-color: var(--secondary-color);
     color: var(--black);
     transition: all 0.5s;
 }
-
 .pizza-card-content .btn:hover {
     background-color: var(--primary-color);
     color: var(--white);
 }
-
 .pizza-slider-circle {
     text-align: center;
     color: var(--white);
@@ -918,40 +770,32 @@ nav>ul>li {
         border-radius: 50%;
     }
 }
-
 .pizza-bottom-img {
     position: relative;
 }
-
 .pizza-bottom-img::before {
     position: absolute;
     content: url('../images/pizza-section/vector-img-02.png');
     bottom: -60px;
     left: 0;
 }
-
 .pizza-bottom-img::after {
     position: absolute;
     content: url('../images/pizza-section/vector-img-03.png');
     bottom: -30px;
     right: 20px;
 }
-
 /* Tesitimonial section */
-
 .testimonial {
     padding: 160px;
 }
-
 .testimonial-left {
     position: relative;
     right: 135px;
 }
-
 .testimonial-img {
     position: relative;
     cursor: grab;
-
     &::before {
         content: url('../images/testimonial/circle.png');
         position: absolute;
@@ -959,7 +803,6 @@ nav>ul>li {
         left: 0;
     }
 }
-
 .testimonial-img img {
     position: absolute;
     border-radius: 50%;
@@ -967,7 +810,6 @@ nav>ul>li {
     top: 48px;
     left: 51px;
 }
-
 .testimonial-circle-overlay {
     width: 300px;
     height: 300px;
@@ -985,48 +827,39 @@ nav>ul>li {
     padding: 0 30px;
     cursor: grab;
 }
-
 .testimonial-circle-overlay .food-bowl {
     font-size: 80px;
     color: rgba(var(--primary-color-rgb), 0.97);
     padding-top: 40px;
 }
-
 .testimonial-circle-overlay p {
     padding-bottom: 55px;
 }
-
 .testimonial-right {
     position: relative;
     left: 70px;
     top: 80px;
 }
-
 .testimonial-para {
     margin-top: 20px;
     color: #757171;
     font-size: 16px;
 }
-
 .testimonial-right ul {
     margin-top: 70px;
     font-size: 24px;
 }
-
 .testimonial-right ul li {
     margin-bottom: 25px;
 }
-
 .testimonial-right ul li a {
     color: var(--black);
     font-weight: 600;
     transition: all 0.5s ease;
     position: relative;
-
     &:hover {
         color: var(--primary-color);
     }
-
     &::after {
         content: '';
         position: absolute;
@@ -1037,32 +870,26 @@ nav>ul>li {
         background-color: var(--primary-color);
         transition: all 0.8s ease;
     }
-
     &:hover:after {
         width: 100%;
     }
 }
-
 .text-sm {
     font-size: 13px;
     vertical-align: super;
     margin-right: 10px;
 }
-
 .testimonial-angle-right {
     margin-left: 20px;
     transition: all 0.5s ease;
 }
-
 .testimonial-right ul li a:hover .testimonial-angle-right {
     background-color: var(--primary-color);
     color: var(--white);
     padding: 0px 10px;
     border-radius: 50%;
 }
-
 /* Reviews Section */
-
 .reviews {
     position: relative;
     background-color: var(--primary-color);
@@ -1071,7 +898,6 @@ nav>ul>li {
     overflow: hidden;
     z-index: 1;
 }
-
 .reviews::after {
     content: url('../images/reviews/waves-bg.png');
     position: absolute;
@@ -1079,17 +905,14 @@ nav>ul>li {
     left: 0;
     z-index: -1;
 }
-
 .reviews .container {
     padding-left: 15px;
     padding-right: 15px;
 }
-
 .reviews img {
     width: 84px;
     margin-left: -15px;
 }
-
 .reviews h2 {
     position: absolute;
     color: var(--white);
@@ -1098,13 +921,11 @@ nav>ul>li {
     margin-bottom: -15px;
     top: 105px;
 }
-
 .reviews h2 span {
     position: absolute;
     top: -15px;
     font-size: 45px;
 }
-
 .reviews p {
     position: absolute;
     color: var(--white);
@@ -1112,9 +933,7 @@ nav>ul>li {
     font-weight: 600;
     top: 160px;
 }
-
 /* Special Offer Section */
-
 .special-offer {
     background-image: url('../images/special-offer/burger-bg-img-01.jpg');
     padding: 130px 70px 100px 70px;
@@ -1122,12 +941,10 @@ nav>ul>li {
     background-size: cover;
     background-position: center center;
 }
-
 .special-offer h2 {
     margin-top: 10px;
     color: var(--white);
 }
-
 .special-offer-para {
     color: var(--white);
     font-size: 18px;
@@ -1136,45 +953,37 @@ nav>ul>li {
     font-weight: 600;
     width: 90%;
 }
-
 .counter-content {
     margin: 30px 0 60px 0;
 }
-
 .counter {
     color: var(--secondary-color);
     font-size: 48px;
     font-weight: 600;
 }
-
 .counter-text {
     color: var(--white);
     font-size: 12px;
     font-weight: 600;
     margin-top: -10px;
 }
-
 .special-offer-btn {
     background-color: var(--primary-color);
     color: var(--white);
     padding: 16px 46px;
     transition: all 0.5s ease;
 }
-
 .special-offer-btn:hover {
-    background-color: var(--white);
+   background-color: var(--white);
     color: var(--black);
 }
-
 .special-offer-imgs {
     position: relative;
 }
-
 .special-offer-arrow {
     position: absolute;
     left: 270px;
 }
-
 .special-offer-arrow h4 {
     position: absolute;
     color: var(--white);
@@ -1184,19 +993,16 @@ nav>ul>li {
     width: 140px;
     font-weight: 400;
 }
-
 .special-offer-arrow img {
     position: absolute;
     top: 35px;
     width: initial;
 }
-
 .special-offer-circle {
     position: absolute;
     bottom: 140px;
     right: -35px;
 }
-
 .special-offer-circle h4 {
     font-family: 'Pacifico';
     position: absolute;
@@ -1206,50 +1012,41 @@ nav>ul>li {
     font-weight: 400;
     line-height: 30px;
 }
-
 .special-offer-circle h4::before {
     content: url('../images/special-offer/circle-shap.png');
     position: absolute;
     bottom: -40px;
     right: -40px;
 }
-
 /* Customer Section */
-
 .customer {
     margin: 150px 0 75px 0;
 }
-
 .customer-cards {
     margin: 50px 0;
     margin-right: -96px;
 }
-
 .customer-content {
     background-color: var(--white);
     padding: 50px 29px;
     border-radius: 10px;
 }
-
 .customer-content>h3 {
     color: var(--primary-color);
     font-size: 20px;
     position: relative;
 }
-
 .customer-content h3 span {
     color: #757171;
     opacity: 0.2;
     font-size: 65px;
     position: relative;
 }
-
 .customer-content p {
     position: relative;
     padding-bottom: 20px;
     color: #757171;
 }
-
 .customer-content p::after {
     content: '';
     position: absolute;
@@ -1259,11 +1056,9 @@ nav>ul>li {
     height: 1px;
     background-color: rgba(117, 113, 113, 0.2);
 }
-
 .customer-info {
     position: relative;
 }
-
 .customer-info::before {
     border-color: #ebebeb #ebebeb transparent transparent;
     top: -21px;
@@ -1277,7 +1072,6 @@ nav>ul>li {
     border-style: solid;
     background: transparent;
 }
-
 .customer-info::after {
     position: absolute;
     content: '';
@@ -1290,96 +1084,78 @@ nav>ul>li {
     right: -1px;
     border-color: #fff #fff transparent transparent;
 }
-
 .customer-content .col-3,
 .customer-content .col-9 {
     margin-top: 30px;
     margin-bottom: -20px;
 }
-
 .customer-content .col-3 img {
     border-radius: 50%;
     width: 51px;
 }
-
 .customer-content .col-9 h3 {
     font-size: 14px;
     font-weight: 600;
     line-height: 20px;
 }
-
 .customer-content .col-9 div {
     font-size: 12px;
     font-weight: 400;
     line-height: 20px;
 }
-
 .customer-slider-circle {
     color: var(--primary-color);
     text-align: left;
     margin-top: 40px;
     font-size: 8px;
     margin-bottom: -40px;
-
     & span {
         margin-right: 8px;
         cursor: pointer;
     }
-
     & span:first-child {
         border: 2px solid var(--primary-color);
         padding: 3px 3px 3px 5px;
         border-radius: 50%;
     }
 }
-
 /* Partners Section */
-
 .partners-img {
     height: 200px;
     overflow: hidden;
     margin: 35px 0;
 }
-
 .partners img {
     width: 50%;
     padding: 50px 0;
 }
-
 .partner-logo {
     transform: translateY(-200px);
     transition: all 0.5s ease;
-
     &:hover {
         transform: translateY(0);
     }
 }
-
 .partner-logo {
     justify-items: center;
 }
-
 /* app section */
-
 .apps {
     position: relative;
     padding-bottom: 50px;
 }
-
 .apps-top-img::before {
     content: url("../images/burger-app-sec/vector-img-03.png");
     position: absolute;
     right: 205px;
     top: 75px;
 }
-
 .mobile-img img {
     position: relative;
     top: 32px;
     left: -40px;
     width: 115%;
 }
-
 .mobile-img::before {
     content: url("../images/burger-app-sec/circle-ellipse.png");
     position: absolute;
@@ -1387,7 +1163,6 @@ nav>ul>li {
     top: 110px;
     background-size: cover;
 }
-
 .mobile-img::after {
     content: '';
     position: absolute;
@@ -1399,17 +1174,14 @@ nav>ul>li {
     border-radius: 50%;
     z-index: -1;
 }
-
 .apps-text {
     padding-left: 75px;
     color: var(--white);
 }
-
 .apps-text p {
     margin: 25px 0;
     color: rgba(var(--white-rgb), 0.75);
 }
-
 .apps-text .btn {
     display: inline-flex;
     align-items: center;
@@ -1420,52 +1192,44 @@ nav>ul>li {
     font-size: 14px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     margin-right: 20px;
-
     & .row {
         flex-direction: column;
     }
-
     & .icon {
         margin-right: 25px;
         font-size: 30px;
         line-height: 30px;
         color: var(--primary-color);
     }
-
     & .sup {
         font-size: 12px;
         margin-right: 4px;
         font-family: var(--text-ternary);
         color: #757171;
     }
-
     & .download-text {
         font-size: 14px;
         font-family: var(--text-ternary);
         line-height: 20px !important;
     }
 }
-
 .apps-bottom-img::before {
     content: url('../images/burger-app-sec/vector-img-02.png');
     position: absolute;
     bottom: 35px;
     left: 60px;
 }
-
 .apps-bottom-img::after {
     content: url('../images/burger-app-sec/vector-img-01.png');
     position: absolute;
     bottom: 85px;
     right: 60px;
 }
-
 /* News Section */
 .news-item {
     margin-top: 50px;
     position: relative;
 }
-
 .news-wrapper::after {
     content: '';
     position: absolute;
@@ -1475,7 +1239,6 @@ nav>ul>li {
     height: 0.5px;
     background-color: rgba(var(--black-rgb), 0.30);
 }
-
 .date-wrapper {
     max-width: 110px;
     min-height: 110px;
@@ -1485,54 +1248,45 @@ nav>ul>li {
     padding-top: 15px;
     font-weight: 600;
 }
-
 .date {
     font-size: 54px;
     line-height: 54px;
     padding-bottom: 5px;
     color: var(--black);
 }
-
 .month {
     padding: 9px;
     color: var(--black);
     background-color: var(--secondary-color);
     border-radius: 0 0 10px 10px;
 }
-
 .news-content {
     margin: 0 500px 0 50px;
 }
-
 .news-sm-title {
     font-family: var(--text-ternary);
     color: var(--black);
     margin-top: 15px;
     font-weight: 600;
 }
-
 .news-sm-title:hover {
     color: var(--primary-color);
 }
-
 .news-content i {
     margin: 23px 10px;
     font-size: 8px;
 }
-
 .news-title {
     color: var(--black);
     font-size: 25px;
     margin-left: -15px;
     font-weight: 700;
 }
-
 .read-btn a {
     color: var(--primary-color) !important;
     transition: all 0.5s ease-in-out;
     position: relative;
 }
-
 .read-btn a::after {
     content: '';
     width: 100%;
@@ -1543,18 +1297,14 @@ nav>ul>li {
     right: 0px;
     transition: all 0.5s ease;
 }
-
 .read-btn a:hover {
     color: var(--secondary-color) !important;
 }
-
 .read-btn a:hover::after {
     width: 25%;
     background-color: var(--secondary-color);
 }
-
 /* Footer Section */
-
 footer {
     background-image: url('../images/footer/footer-bg.jpg');
     background-size: cover;
@@ -1563,29 +1313,24 @@ footer {
     color: var(--white);
     padding: 75px 0;
 }
-
 footer h2 {
     font-weight: 500;
 }
-
 footer h3 {
     font-size: 40px;
     margin-top: 10px;
     text-decoration: underline;
     font-weight: 300;
 }
-
 .mt-35 {
     margin-top: 35px;
 }
-
 .footer-details {
     position: relative;
     flex-wrap: wrap !important;
     justify-content: space-around;
     font-family: var(--text-ternary);
 }
-
 .footer-details::before {
     content: '';
     position: absolute;
@@ -1595,35 +1340,28 @@ footer h3 {
     height: 1px;
     background-color: rgba(var(--white-rgb), 0.75);
 }
-
 .footer-details h5 {
     font-size: 22px;
     font-weight: 600;
     margin: 0 0 20px -10px;
 }
-
 .footer-list ul li {
     margin-bottom: 10px;
     font-weight: 400;
 }
-
 .footer-list ul li a {
     transition: all 0.3s;
-
     &:hover {
         color: var(--secondary-color);
     }
 }
-
 .timings {
     margin-left: 75px;
 }
-
 .hrs-time,
 .footer-last {
     position: relative;
 }
-
 .hrs-time::after {
     content: '';
     width: 146px;
@@ -1633,59 +1371,47 @@ footer h3 {
     background-size: 8px;
     background-image: linear-gradient(to right, transparent 0, transparent 75%, var(--white) 75%, var(--white));
 }
-
 .seprator {
     margin: 0 2px;
     letter-spacing: 5px;
 }
-
 .time {
     color: var(--secondary-color);
 }
-
 .address,
 .phone {
     margin-bottom: 15px;
-
     & i {
         color: var(--secondary-color);
     }
-
     & span {
         margin: 15px;
     }
 }
-
 .social-icons {
     display: flex;
     gap: 30px;
     font-size: 18px;
     margin-top: 18px;
     margin-left: 20px;
-
     & a {
         transition: all 0.5s ease;
     }
-
     & a:hover {
         color: var(--secondary-color);
     }
 }
-
 .footer-last {
     font-family: var(--text-ternary);
     margin-top: 60px;
-
     & a {
         gap: 15px;
         transition: all 0.5s ease;
     }
-
     & a:hover {
         color: var(--secondary-color);
     }
 }
-
 .top{
     position: fixed;
     right: 50px;
